@@ -11,30 +11,30 @@
   
               <h2 class="text-uppercase text-center mb-5">Register</h2>
 
-              <form>
+              <form action="/add_user" method="POST">
 
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example3cg">Your Name</label>
-                  <input type="text" id="form3Example1cg" class="form-control flex-row form-control-lg"/>
+                  <input type="text" id="form3Example1cg" name="name" class="form-control flex-row form-control-lg"/>
              
                 </div>
 
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example3cg">Your Email</label>
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                  <input type="email" id="form3Example3cg" name="uemail" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example4cg">Password</label>
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <input type="password" id="form3Example4cg" name="upassword" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example4cdg">Repeat your password</label>
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                  <input type="password" id="form3Example4cdg" name="rpassword" class="form-control form-control-lg" />
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button type="button"
+                  <button type="submit"
                     class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                 </div>
               </form>
