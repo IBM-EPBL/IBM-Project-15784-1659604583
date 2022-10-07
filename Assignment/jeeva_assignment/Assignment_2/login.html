@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <title>Login Form Demo</title>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <form action="/form_login" class="form" method="post">
+        <h2>Login</h2>
+        <div class="input-group">
+          <input type="text" name="username" id="loginUser" required />
+          <label for="username">User Name</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            name="password"
+            id="loginPassword"
+            required
+          />
+          <label for="password">Password</label>
+        </div>
+        <input type="submit" value="Login" class="submit-btn" />
+      </form>
+      <h1 >{{info}}</h1>
+    </div>
+  </body>
+</html>
