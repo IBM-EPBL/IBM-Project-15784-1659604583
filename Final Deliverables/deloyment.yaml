@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: peta-node-deployment
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: petanode
+   template:
+     metadata:
+       labels:
+         app: petanode
+     spec:
+       containers:
+       - name: petanode
+         image: icr.io/collection/final:latest
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
